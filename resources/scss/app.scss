@@ -1,5 +1,45 @@
 @import "~bootstrap/scss/bootstrap";
 
-main {
-    background-color: lightcoral;
+.login-container{
+
+    width: 50%;
+    background-color: darkgray;
+    margin:0 auto;
+}
+
+.login-form{
+
+    background-color: gray;
+}
+
+header{
+    
+    height: 15vh;
+    background-color: darkgray;
+
+}
+
+.img-logo{
+
+    height: 10vh;
+}
+
+main{
+
+    height: 85vh;
+    overflow-y: auto;
+    background-image: url('https://media.douglas.it/medias/ZAxCp7pos-00700105-1-Facciata.jpg?context=bWFzdGVyfHBvaW50LW9mLXNlcnZpY2V8NjEyMjMwfGltYWdlL2pwZWd8YUdaa0wyZzFNQzh4TmpRNU5qazJORGd5T1RJeE5DOWFRWGhEY0Rkd2IzTmZNREEzTURBeE1EVmZNVjlHWVdOamFXRjBZUzVxY0djfDA0M2M3MjAwN2ZmY2E2N2UzMDBiMTkwYzFiZTJiYTU2ZmNjYzliNDg2ZjFhMzc0YTU1MzYwN2RkY2U5NGRkOWE') ;
+    background-size: cover;
+}
+
+.my-card{
+    
+    background-color: darkgray;
+
+}
+
+.img-container{
+
+    object-fit: cover;
+    
 }

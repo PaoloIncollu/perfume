@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 // Controllers
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\Admin\MainController as AdminMainController;
-
+use App\Http\Controllers\PerfumeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,7 +25,12 @@ Route::prefix('admin')
     ->group(function () {
 
     Route::get('/dashboard', [AdminMainController::class, 'dashboard'])->name('dashboard');
-
+    Route::resource('/perfumes', PerfumeController::class)->only([
+        'index',
+        'show',
+        'update',
+        'destroy'
+    ]);
 });
 
 require __DIR__.'/auth.php';
