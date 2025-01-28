@@ -58,12 +58,12 @@
                             @if ($perfume->img)
                                 <div class="position-relative img-preview-wrapper" id="image_container{{ $perfume->id }}">
                                     @if (filter_var($perfume->img, FILTER_VALIDATE_URL))
-                                        <img class="h-150 img-thumbnail" 
+                                        <img class="h-200 img-thumbnail" 
                                             id="img_preview{{ $perfume->id }}" 
                                             src="{{ $perfume->img }}" 
                                             alt="{{ $perfume->name_perfume }}">
                                     @else
-                                        <img class="h-150 img-thumbnail" 
+                                        <img class="h-200 img-thumbnail" 
                                         id="img_preview{{ $perfume->id }}" 
                                         src="{{ asset('storage/'.$perfume->img) }}" 
                                         alt="{{ $perfume->name_perfume }}">

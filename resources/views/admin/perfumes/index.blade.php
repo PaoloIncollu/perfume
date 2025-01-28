@@ -25,7 +25,7 @@
                                         }
                                     }
                                 @endphp
-                                <img src="{{ $imagePath ?? $defaultImage }}" alt="{{ $perfume->name_perfume ?? 'Placeholder image' }}" class="w-100">
+                                <img src="{{ $imagePath ?? $defaultImage }}" alt="{{ $perfume->name_perfume ?? 'Placeholder image' }}" class="img-thumbnail h-300">
                             </div>
                         </div>
 
