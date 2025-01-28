@@ -19,14 +19,14 @@
     <body>
         <header class="d-flex align-items-center">
             <nav class="navbar navbar-expand col-12">
-                <div class="container">
+                <div class="container-fluid px-5">
                     
                     
                     <div class="collapse navbar-collapse" id="navbarText">
 
                         <img class="img-logo col-auto me-auto " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7HGZeDZhcenqWe4MQTJ2N8BFRZQ4VOibKw&s" alt="douglas">
 
-                        <h1 class='text-center fw-bold col me-auto title' style="font-size: 60px">
+                        <h1 class='text-center fw-bold col me-auto title'>
                             DOUGLAS
                         </h1>
                     <!--<ul class="navbar-nav me-auto ">
@@ -37,9 +37,20 @@
                                 <a class="nav-link fw-bold fs-4" href="{{ route('admin.perfumes.index') }}">Profumi</a>
                             </li>
                         </ul>-->
+
+                        <button type="button" class="text-white fw-bold btn bg-black me-2" >
+
+                            <a href="{{ env('FRONTEND_URL') }}" class="nav-link ">
+
+                                <span>
+                                    Homepage
+                                </span>
+                            </a>
+                        </button>
+                        
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <button type="submit" class="btn btn-outline-danger fw-bold fs-4 col-auto">
+                            <button type="submit" class="btn bg-black text-danger fw-bold">
                                 Log Out
                             </button>
                         </form>

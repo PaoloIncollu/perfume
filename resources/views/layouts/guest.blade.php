@@ -19,7 +19,7 @@
     <body>
         <header class="d-flex align-items-center">
             <nav class="navbar navbar-expand col-12">
-                <div class="container">
+                <div class="container-fluid px-5">
                     
                     
 
@@ -40,6 +40,16 @@
                         </ul>
 
                         @auth
+
+                            <button type="button" class="text-white fw-bold btn bg-black me-2" >
+
+                                <a href="{{ env('FRONTEND_URL') }}" class="nav-link ">
+
+                                    <span>
+                                        Homepage
+                                    </span>
+                                </a>
+                            </button>
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
 
@@ -49,7 +59,9 @@
                             </form>
                         @else
                                 
-                            <h1 class="text-center fw-bold col title me-auto" style="font-size: 60px">DOUGLAS</h1>
+                            <h1 class="text-center fw-bold col title me-auto">DOUGLAS</h1>
+
+                            <img class="img-logo col-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7HGZeDZhcenqWe4MQTJ2N8BFRZQ4VOibKw&s" alt="douglas">
                                 
                         @endauth
                     </div>
