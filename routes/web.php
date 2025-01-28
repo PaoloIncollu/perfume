@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 // Controllers
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\Admin\MainController as AdminMainController;
-use App\Http\Controllers\PerfumeController;
+use App\Http\Controllers\Admin\PerfumeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes

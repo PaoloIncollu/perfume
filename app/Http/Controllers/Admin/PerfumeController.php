@@ -14,7 +14,7 @@ class PerfumeController extends Controller
      */
     public function index()
     {
-        $perfumes = Perfume::get();
+        $perfumes = Perfume::all();
         return view('admin.perfumes.index', compact('perfumes'));
     }
 
@@ -39,6 +39,7 @@ class PerfumeController extends Controller
             'img' => 'nullable|image|max:2048',
         ]);
 
+        // Salva l'immagine se presente
         if ($request->hasFile('img')) {
             $validated['img'] = $request->file('img')->store('perfumes', 'public');
         }
@@ -61,16 +62,14 @@ class PerfumeController extends Controller
      */
     public function edit($id)
     {
-        $perfume = Perfume::findOrFail($id); // Recupera l'oggetto Perfume
+        $perfume = Perfume::findOrFail($id);
         return view('admin.perfumes.edit', compact('perfume'));
     }
-
-
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Perfume $perfume)
+    public function update(Request $request, $id)
     {
         $validated = $request->validate([
             'name_perfume' => 'required|string|max:255',
@@ -80,16 +79,32 @@ class PerfumeController extends Controller
             'img' => 'nullable|image|max:2048',
         ]);
 
-        if ($request->hasFile('img')) {
-            if ($perfume->img) {
+        $perfume = Perfume::findOrFail($id);
+
+        // Controlla se è stato richiesto di rimuovere l'immagine
+        if ($request->has('remove_image') && $request->input('remove_image') == '1') {
+            if ($perfume->img && Storage::disk('public')->exists($perfume->img)) {
                 Storage::disk('public')->delete($perfume->img);
             }
-            $validated['img'] = $request->file('img')->store('perfumes', 'public');
+            $perfume->img = null; // Resetta l'immagine
         }
 
+        // Controlla se è stata caricata una nuova immagine
+        if ($request->hasFile('img')) {
+            // Rimuove l'immagine precedente se esiste
+            if ($perfume->img && Storage::disk('public')->exists($perfume->img)) {
+                Storage::disk('public')->delete($perfume->img);
+            }
+
+            // Salva la nuova immagine
+            $validated['img'] = $request->file('img')->store('perfumes', 'public');
+            $perfume->img = $validated['img'];
+        }
+
+        // Aggiorna gli altri campi
         $perfume->update($validated);
 
-        return redirect()->route('admin.perfumes.index')->with('success', 'Perfume updated successfully.');
+        return redirect()->back()->with('success', 'Dettagli del profumo aggiornati con successo!');
     }
 
     /**
@@ -97,7 +112,8 @@ class PerfumeController extends Controller
      */
     public function destroy(Perfume $perfume)
     {
-        if ($perfume->img) {
+        // Elimina l'immagine se esiste
+        if ($perfume->img && Storage::disk('public')->exists($perfume->img)) {
             Storage::disk('public')->delete($perfume->img);
         }
 
@@ -105,5 +121,4 @@ class PerfumeController extends Controller
 
         return redirect()->route('admin.perfumes.index')->with('success', 'Perfume deleted successfully.');
     }
-    
 }

@@ -10,6 +10,11 @@
 
         <!-- Scripts -->
         @vite('resources/js/app.js')
+
+        {{-- fontawesome --}}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"|
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header class="d-flex align-items-center">
@@ -19,9 +24,9 @@
                     
                     <div class="collapse navbar-collapse" id="navbarText">
 
-                        <img class="img-logo col-auto " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7HGZeDZhcenqWe4MQTJ2N8BFRZQ4VOibKw&s" alt="douglas">
+                        <img class="img-logo col-auto me-auto " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7HGZeDZhcenqWe4MQTJ2N8BFRZQ4VOibKw&s" alt="douglas">
 
-                        <h1 class='text-center fw-bold col me-auto' style="font-size: 60px">
+                        <h1 class='text-center fw-bold col me-auto title' style="font-size: 60px">
                             DOUGLAS
                         </h1>
                     <!--<ul class="navbar-nav me-auto ">

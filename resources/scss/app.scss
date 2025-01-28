@@ -1,5 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 
+.my-bg-dark-gray{
+
+    background-color: darkgray;
+}
+
+.bg-offcanvas{
+
+    background-color:#545454;
+}
+
 .login-container{
 
     width: 50%;
@@ -33,13 +43,34 @@ main{
 }
 
 .my-card{
-    
+
     background-color: darkgray;
 
 }
 
 .img-container{
-
-    object-fit: cover;
+    
+    width: 200px;
+    max-height: 300px;
     
 }
+
+
+
+@media (max-width: 576px) {
+
+    .title{
+
+        display: none;
+    }
+    .my-card{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        
+    }
+
+  }

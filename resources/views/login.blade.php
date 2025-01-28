@@ -43,14 +43,7 @@
                         <input id="remember_me" type="checkbox" name="remember">
                         <span class="fw-bold">Remember me</span>
                     </label>
-                </div>
-    
-                <div class="mt-4">
-                    @if (Route::has('password.request'))
-                        <a href="{{ route('password.request') }}" class="text-white text-decoration-none">
-                            {{ __('Forgot your password?') }}
-                        </a>
-                    @endif
+                
     
                     <button type="submit" class="btn btn-secondary ms-5">
                         Log in

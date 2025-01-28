@@ -1,4 +1,4 @@
-<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithEdit{{ $perfume->id }}" aria-labelledby="offcanvasWithEditLabel" style="background-color:#545454 ">
+<div class="offcanvas offcanvas-end bg-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithEdit{{ $perfume->id }}" aria-labelledby="offcanvasWithEditLabel">
     <div class="offcanvas-header">
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
@@ -50,18 +50,30 @@
                         @enderror
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3 d-flex flex-column align-items-center ">
+                        
                         <label for="img_input{{ $perfume->id }}">Carica immagine:</label>
-                        <input type="file" id="img_input{{ $perfume->id }}" name="image" class="form-control">
+                        <input type="file" id="img_input{{ $perfume->id }}" name="img" class="form-control">
                         <div class="mt-2">
-                            @if ($perfume->image)
+                            @if ($perfume->img)
                                 <div class="position-relative img-preview-wrapper" id="image_container{{ $perfume->id }}">
-                                    <img class="h-150 img-thumbnail" 
-                                         id="img_preview{{ $perfume->id }}" 
-                                         src="{{ $perfume->image }}" 
-                                         alt="{{ $perfume->item_name }}">
-                                    <button type="button" class="remove-img-btn d-flex" id="remove_image{{ $perfume->id }}">
-                                        <i class="fa-solid fa-xmark"></i>
+                                    @if (filter_var($perfume->img, FILTER_VALIDATE_URL))
+                                        <img class="h-150 img-thumbnail" 
+                                            id="img_preview{{ $perfume->id }}" 
+                                            src="{{ $perfume->img }}" 
+                                            alt="{{ $perfume->name_perfume }}">
+                                    @else
+                                        <img class="h-150 img-thumbnail" 
+                                        id="img_preview{{ $perfume->id }}" 
+                                        src="{{ asset('storage/'.$perfume->img) }}" 
+                                        alt="{{ $perfume->name_perfume }}">
+
+                                    @endif
+                                    
+                                    
+                                    
+                                    <button type="button" class="remove-img-btn btn mt-4 w-100 d-flex justify-content-center" id="remove_image{{ $perfume->id }}">
+                                        <i class="fa-solid fa-trash fa-2xl"></i>
                                     </button>
                                     <input class="d-none" type="checkbox" id="removeimage_input{{ $perfume->id }}" name="remove_image" value="1">
                                 </div>
@@ -69,7 +81,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-warning w-100">Modifica</button>
+                    <button type="submit" class="btn bg-black fw-bold text-warning w-100">Modifica</button>
                 </form>
             </div>
         </div>
@@ -77,5 +89,5 @@
 </div>
 
 @push('scripts')
-    @vite('resources/js/buttons/imgItems.js')
+    @vite('resources/js/buttons/imgPerfume.js')
 @endpush

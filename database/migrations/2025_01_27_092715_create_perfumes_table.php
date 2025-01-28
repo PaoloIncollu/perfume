@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('name_perfume');
             $table->string('brand');
             $table->decimal('price');
-            $table->integer('size');
-            $table->string('description');
-            $table->string('img');
+            $table->integer('size')->nullable();
+            $table->string('description')->nullable();
+            $table->string('img')->nullable();
             $table->timestamps();
         });
     }
