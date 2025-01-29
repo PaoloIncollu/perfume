@@ -9,33 +9,28 @@
     height: 300px;
 }
 
-.my-bg-dark-gray{
+.my-bg-gray{
 
-    background-color: darkgray;
-}
-
-.bg-offcanvas{
-
-    background-color:#545454;
+    background-color: gray;
 }
 
 .login-container{
 
     width: 50%;
-    background-color: darkgray;
+    background-color: #C3EAE7;
     margin:0 auto;
 }
 
 .login-form{
 
     
-    background-color: gray;
+    background-color: #FAE4B2;
 }
 
 header{
     
-    height: 15vh;
-    background-color: darkgray;
+    height: 10vh;
+    
 
 }
 
@@ -46,12 +41,12 @@ header{
 
 .img-logo{
 
-    height: 10vh;
+    height: 8vh;
 }
 
 main{
 
-    height: 85vh;
+    height: 90vh;
     overflow-y: auto;
     background-image: url('https://media.douglas.it/medias/ZAxCp7pos-00700105-1-Facciata.jpg?context=bWFzdGVyfHBvaW50LW9mLXNlcnZpY2V8NjEyMjMwfGltYWdlL2pwZWd8YUdaa0wyZzFNQzh4TmpRNU5qazJORGd5T1RJeE5DOWFRWGhEY0Rkd2IzTmZNREEzTURBeE1EVmZNVjlHWVdOamFXRjBZUzVxY0djfDA0M2M3MjAwN2ZmY2E2N2UzMDBiMTkwYzFiZTJiYTU2ZmNjYzliNDg2ZjFhMzc0YTU1MzYwN2RkY2U5NGRkOWE') ;
     background-size: cover;
@@ -59,7 +54,7 @@ main{
 
 .my-card{
 
-    background-color: darkgray;
+    background-color: white;
 
 }
 
@@ -132,6 +127,11 @@ main{
         align-items: center;
         padding: 20px 0;
         
+        .my-col-info{
+
+            padding: 20px 0;
+            text-align: center;
+        }
     }
 
   }

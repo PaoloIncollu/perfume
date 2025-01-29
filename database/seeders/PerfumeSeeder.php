@@ -6,13 +6,11 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 // Helpers
-
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\File;
 
 // Models
-
 use App\Models\Perfume;
-
 
 class PerfumeSeeder extends Seeder
 {
@@ -24,16 +22,18 @@ class PerfumeSeeder extends Seeder
         Schema::withoutForeignKeyConstraints(function () {
             Perfume::truncate();
         });
+
+        $perfumeData = json_decode(File::get(database_path('seeders/perfumes.json')), true);
         
-        for($i = 0; $i < 50; $i++) {
+        foreach ($perfumeData as $perfume) {
             Perfume::create([
-                'name_perfume' => fake()->word(),
-                'brand' => fake()->word(),
-                'price' => fake()->randomFloat(2, 10, 300),
-                'size' => fake()->randomDigit(),
-                'description' => fake()->word(3),
-                'img' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPDcY7bqFC6sqa0a0DOXs8U-YJ0E6oAAMyA&s',
+                'name_perfume' => $perfume['name_perfume'],
+                'brand' => $perfume['brand'],
+                'price' => $perfume['price'],
+                'size' => $perfume['size'],
+                'description' => $perfume['description'],
+                'img' => $perfume['img'],
             ]);
-        }    
+        }
     }
 }

@@ -13,7 +13,7 @@ class PerfumeController extends Controller
     public function index(){
 
         // paginazione per mostrarne 5 a pagina
-        $perfumes = Perfume::paginate(8);
+        $perfumes = Perfume::paginate(12);
 
         return response()->json([
             'success' => true,

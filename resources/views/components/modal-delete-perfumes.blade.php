@@ -1,7 +1,7 @@
 <div>
     <div class="modal fade text-white " id="deleteModal{{ $perfume->id }}" tabindex="-1" aria-labelledby="exampleModalLabel{{ $perfume->id }}" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bg-offcanvas">
+            <div class="modal-content my-bg-gray">
                 <div class="modal-header">
                     <h1 class="modal-title fs-4" id="exampleModalLabel{{ $perfume->id }}">
                         Elimina il profumo

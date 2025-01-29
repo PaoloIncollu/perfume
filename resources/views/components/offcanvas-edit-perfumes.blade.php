@@ -1,11 +1,11 @@
-<div class="offcanvas offcanvas-end bg-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithEdit{{ $perfume->id }}" aria-labelledby="offcanvasWithEditLabel">
+<div class="offcanvas offcanvas-end my-bg-gray" data-bs-scroll="true" tabindex="-1" id="offcanvasWithEdit{{ $perfume->id }}" aria-labelledby="offcanvasWithEditLabel">
     <div class="offcanvas-header">
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
 
     <div class="offcanvas-body">
-        <div class="card bg-secondary text-white border-0">
-            <div class="card-body">
+        <div class="card my-bg-gray text-white border-0">
+            <div class="card-body my-bg-gray">
                 <h5 class="card-title" id="offcanvasWithEditLabel">Modifica i dettagli del profumo</h5>
                 <form action="{{ route('admin.perfumes.update', $perfume->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
@@ -24,19 +24,29 @@
                         <label for="brand" class="form-label">Brand <span class="text-danger">*</span></label>
                         <input type="text" class="form-control  @error('brand') is-invalid @enderror" 
                                id="brand" name="brand" required minlength="3" maxlength="255" 
-                               value="{{ old('brand', $perfume->brand) }}" placeholder="Inserisci il nome...">
+                               value="{{ old('brand', $perfume->brand) }}" placeholder="Inserisci il brand...">
                         @error('brand')
-                            <span class="text-danger">Il campo nome è obbligatorio, inserire almeno tre caratteri</span>
+                            <span class="text-danger">Il campo brand è obbligatorio, inserire almeno tre caratteri</span>
                         @enderror
                     </div>
 
                     <div class="mb-3">
-                        <label for="description" class="form-label">Descrizione</label>
+                        <label for="description" class="form-label">Descrizione <span class="text-danger">*</span></label>
                         <input type="text" class="form-control @error('description') is-invalid @enderror" 
                                id="description" name="description" required minlength="10" maxlength="1024" 
                                value="{{ old('description', $perfume->description) }}" placeholder="Inserisci la descrizione del profumo...">
                         @error('description')
                             <span class="text-danger">Il campo descrizione è obbligatorio, inserire almeno dieci caratteri</span>
+                        @enderror
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="size" class="form-label">Misura / ml <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control @error('size') is-invalid @enderror" 
+                               id="size" name="size" required minlength="2" maxlength="4" 
+                               value="{{ old('size', $perfume->size) }}" placeholder="Inserisci la descrizione del profumo...">
+                        @error('size')
+                            <span class="text-danger">Il campo misura è obbligatorio, inserire almeno 2 numeri</span>
                         @enderror
                     </div>
 
@@ -52,9 +62,9 @@
 
                     <div class="mb-3 d-flex flex-column align-items-center ">
                         
-                        <label for="img_input{{ $perfume->id }}">Carica immagine:</label>
+                        <label class="mb-2" for="img_input{{ $perfume->id }}">Carica immagine:</label>
                         <input type="file" id="img_input{{ $perfume->id }}" name="img" class="form-control">
-                        <div class="mt-2">
+                        <div class="mt-4">
                             @if ($perfume->img)
                                 <div class="position-relative img-preview-wrapper" id="image_container{{ $perfume->id }}">
                                     @if (filter_var($perfume->img, FILTER_VALIDATE_URL))

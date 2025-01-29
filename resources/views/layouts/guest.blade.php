@@ -61,7 +61,15 @@
                                 
                             <h1 class="text-center fw-bold col title me-auto">DOUGLAS</h1>
 
-                            <img class="img-logo col-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7HGZeDZhcenqWe4MQTJ2N8BFRZQ4VOibKw&s" alt="douglas">
+                            <button type="button" class="text-white fw-bold btn bg-black me-2" >
+
+                                <a href="{{ env('FRONTEND_URL') }}" class="nav-link ">
+    
+                                    <span>
+                                        Homepage
+                                    </span>
+                                </a>
+                            </button>
                                 
                         @endauth
                     </div>

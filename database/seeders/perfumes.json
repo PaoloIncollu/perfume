@@ -1,0 +1,403 @@
+[
+    
+    {
+        "name_perfume": "Goddess",
+        "brand": "Burberry",
+        "price": "112",
+        "size": "100",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/burberry/3616302020652_01-o/burberry-goddess-eau-de-parfum-ricaricabile-da-donna___230719.jpg"
+    },
+    {
+        "name_perfume": "La Vie Est Belle",
+        "brand": "Lancôme",
+        "price": "73.20",
+        "size": "50",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/lancome/3605532612768_01-o/lancome-la-vie-est-belle-eau-de-parfum-ricaricabile-da-donna___230911.jpg"
+    },
+    {
+        "name_perfume": "Mon Guerlain Intense",
+        "brand": "Guerlain",
+        "price": "63",
+        "size": "30",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/guerlain/3346470137820y_01-o/guerlain-mon-guerlain-intense-eau-de-parfum-da-donna___201030.jpg"
+    },
+    {
+        "name_perfume": "Khamrah Qahwa",
+        "brand": "Lattafa",
+        "price": "49.40",
+        "size": "100",
+        "description": "Eau de Parfum unisex",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/lattafa/6290360593661_01-o/lattafa-khamrah-qahwa-eau-de-parfum-unisex___240112.jpg"
+    },
+    {
+        "name_perfume": "Good Girl Blush Elixir",
+        "brand": "Carolina Herrera",
+        "price": "92.10",
+        "size": "50",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/carolina-herrera/8411061083666_01-o/carolina-herrera-good-girl-blush-elixir-eau-de-parfum-da-donna___240117.jpg"
+    },
+    {
+        "name_perfume": "Momentum Intense",
+        "brand": "Bentley",
+        "price": "22.50",
+        "size": "100",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/bentley/7640171190334_01-o/bentley-momentum-intense-eau-de-parfum-per-uomo___170627.jpg"
+    },
+    {
+        "name_perfume": "Stronger With You Intensely",
+        "brand": "Emporio Armani",
+        "price": "78.30",
+        "size": "100",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/armani/3614272225718_01-o/armani-emporio-stronger-with-you-intensely-eau-de-parfum-per-uomo___190118.jpg"
+    },
+    {
+        "name_perfume": "Burberry for Men",
+        "brand": "Burberry",
+        "price": "28.70",
+        "size": "100",
+        "description": "Eau de Toilette per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/burberry/3614226905758_01-o/burberry-burberry-for-men-eau-de-toilette-per-uomo___191107.jpg"
+    },
+    {
+        "name_perfume": "For Her",
+        "brand": "Narciso Rodriguez",
+        "price": "65.50",
+        "size": "50",
+        "description": "Eau de Toilette da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/narciso-rodriguez/3423470890013_02-o/narciso-rodriguez-for-her-eau-de-toilette-da-donna___130108.jpg"
+    },
+    {
+        "name_perfume": "Cool Water Intense",
+        "brand": "Davidoff",
+        "price": "32.20",
+        "size": "75",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/davidoff/3614228174237_01-o/davidoff-cool-water-intense-eau-de-parfum-per-uomo___190703.jpg"
+    },
+    {
+        "name_perfume": "Eros",
+        "brand": "Versace",
+        "price": "93.50",
+        "size": "100",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/versace/8011003861224_01-o/versace-eros-eau-de-parfum-per-uomo___201025.jpg"
+    },
+    {
+        "name_perfume": "Black Opium",
+        "brand": "Yves Saint Laurent",
+        "price": "100.50",
+        "size": "90",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/yves-saint-laurent/yslblow_aedp10_02-o/yves-saint-laurent-black-opium-eau-de-parfum-da-donna___141119.jpg"
+    },
+    {
+        "name_perfume": "Libre",
+        "brand": "Yves Saint Laurent",
+        "price": "62.50",
+        "size": "30",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/yves-saint-laurent/3614272648401_01-o/yves-saint-laurent-libre-eau-de-parfum-ricaricabile-da-donna___190828.jpg"
+    },
+    {
+        "name_perfume": "BOSS Bottled",
+        "brand": "Hugo Boss",
+        "price": "36.80",
+        "size": "50",
+        "description": "Eau de Toilette per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/hugo-boss/8593420000016_01-o/hugo-boss-boss-bottled-eau-de-toilette-per-uomo___221205.jpg"
+    },
+    {
+        "name_perfume": "Omnia Crystalline",
+        "brand": "BVLGARI",
+        "price": "73.30",
+        "size": "50",
+        "description": "Eau de Toilette da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/bulgari/783320420573_01/bvlgari-bulgari-omnia-crystalline-eau-de-toilette-da-donna___230710.jpg"
+    },
+    {
+        "name_perfume": "Flora Gorgeous Gardenia",
+        "brand": "Gucci",
+        "price": "96.90",
+        "size": "100",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/gucci/3616302022472_01-o/gucci-flora-gorgeous-gardenia-eau-de-parfum-da-donna___210726.jpg"
+    },
+    {
+        "name_perfume": "London for Women",
+        "brand": "Burberry",
+        "price": "41.20",
+        "size": "100",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/burberry/5045252668085_01-o/burberry-london-for-women-eau-de-parfum-da-donna___230210.jpg"
+    },
+    {
+        "name_perfume": "Born In Roma Intense Uomo",
+        "brand": "Valentino",
+        "price": "62.10",
+        "size": "50",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/valentino/3614273790833_01-o/valentino-born-in-roma-intense-uomo-eau-de-parfum-per-uomo___230213.jpg"
+    },
+    {
+        "name_perfume": "MYSLF",
+        "brand": "Yves Saint Laurent",
+        "price": "109.60",
+        "size": "100",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/yves-saint-laurent/3614273852814_01-o/yves-saint-laurent-myslf-eau-de-parfum-ricaricabile-per-uomo___230726.jpg"
+    },
+    {
+        "name_perfume": "Le Male Le Parfum",
+        "brand": "Jean Paul Gaultier",
+        "price": "111.70",
+        "size": "125",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/jean-paul-gaultier/8435415032315_01-o/jean-paul-gaultier-le-male-le-parfum-eau-de-parfum-per-uomo___200617.jpg"
+    },
+    {
+        "name_perfume": "Le Male",
+        "brand": "Jean Paul Gaultier",
+        "price": "87.40",
+        "size": "125",
+        "description": "Eau de Toilette per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/jean-paul-gaultier/3423470317534_01-o/jean-paul-gaultier-le-male-eau-de-toilette-per-uomo___121112.jpg"
+    },
+    {
+        "name_perfume": "Good Girl",
+        "brand": "Carolina Herrera",
+        "price": "104",
+        "size": "80",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/carolina-herrera/8411061818961_01-o/carolina-herrera-good-girl-eau-de-parfum-da-donna___210901.jpg"
+    },
+    {
+        "name_perfume": "Bvlgari Man In Black",
+        "brand": "BVLGARI",
+        "price": "103",
+        "size": "100",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/bvlgari/783320971563xx_01/bvlgari-bulgari-bvlgari-man-in-black-eau-de-parfum-per-uomo___221108.jpg"
+    },
+    {
+        "name_perfume": "1 Million",
+        "brand": "Rabanne",
+        "price": "87.20",
+        "size": "100",
+        "description": "Eau de Toilette per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/paco-rabanne/3349666007921_01-o/rabanne-1-million-eau-de-toilette-per-uomo___240702.jpg"
+    },
+    {
+        "name_perfume": "L’Interdit Rouge",
+        "brand": "GIVENCHY",
+        "price": "86.70",
+        "size": "50",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/givenchy/3274872428041_01/givenchy-linterdit-rouge-eau-de-parfum-da-donna___220620.jpg"
+    },
+    {
+        "name_perfume": "Guilty Pour Homme",
+        "brand": "Gucci",
+        "price": "127.70",
+        "size": "50",
+        "description": "Elixir De Parfume per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/gucci/3616304175893_01-o/gucci-guilty-pour-homme-estratto-profumato-per-uomo___230914.jpg"
+    },
+    {
+        "name_perfume": "Eternity for Men",
+        "brand": "Calvin Klein",
+        "price": "39.40",
+        "size": "100",
+        "description": "Eau de Toilette per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/calvin-klein/caketrm_aedt10_01-o/calvin-klein-eternity-for-men-eau-de-toilette-per-uomo___130515.jpg"
+    },
+    {
+        "name_perfume": "Eros Energy",
+        "brand": "Versace",
+        "price": "72.30",
+        "size": "50",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/versace/8011003890798_01-o/versace-eros-energy-eau-de-parfum-per-uomo___241024.jpg"
+    },
+    {
+        "name_perfume": "Weekend for Women",
+        "brand": "Burberry",
+        "price": "32.30",
+        "size": "100",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/burberry/3614226905284_01-o/burberry-weekend-for-women-eau-de-parfum-da-donna___130515.jpg"
+    },
+    {
+        "name_perfume": "Flora Gorgeous Magnolia",
+        "brand": "Gucci",
+        "price": "41.40",
+        "size": "30",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/gucci/3616303470869_01-o/gucci-flora-gorgeous-magnolia-eau-de-parfum-da-donna___230712.jpg"
+    },
+    {
+        "name_perfume": "Acqua di Giò Parfum",
+        "brand": "Armani",
+        "price": "58.80",
+        "size": "30",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/armani/3614273954181_01-o/armani-acqua-di-gio-parfum-profumo-ricaricabile-per-uomo___240315.jpg"
+    },
+    {
+        "name_perfume": "Sauvage",
+        "brand": "Dior",
+        "price": "128",
+        "size": "100",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/dior/3348901368247_01/dior-sauvage-eau-de-parfum-ricaricabile-per-uomo___200828.jpg"
+    },
+    {
+        "name_perfume": "For Men Intense",
+        "brand": "Bentley",
+        "price": "26.20",
+        "size": "100",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/bentley/7640111497547x_01-o/bentley-for-men-intense-eau-de-parfum-per-uomo___130605.jpg"
+    },
+    {
+        "name_perfume": "Guilty Pour Femme",
+        "brand": "Gucci",
+        "price": "127",
+        "size": "90",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/gucci/3616305259448_01-o/gucci-guilty-pour-femme-love-edition-2025-eau-de-parfum-da-donna___241125.jpg"
+    },
+    {
+        "name_perfume": "BOSS Bottled Elixir",
+        "brand": "Hugo Boss",
+        "price": "69.30",
+        "size": "50",
+        "description": "Eau de Parfum intense per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/hugo-boss/3616304691652_01-o/hugo-boss-boss-bottled-elixir-eau-de-parfum-intense-per-uomo___230907.jpg"
+    },
+    {
+        "name_perfume": "My Way",
+        "brand": "Armani",
+        "price": "123.10",
+        "size": "90",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/armani/3614272907690_01-o/armani-my-way-eau-de-parfum-ricaricabile-da-donna___200722.jpg"
+    },
+    {
+        "name_perfume": "Flora Gorgeous Jasmine",
+        "brand": "Gucci",
+        "price": "53.10",
+        "size": "30",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/gucci/3616302968589_01-o/gucci-flora-gorgeous-jasmine-eau-de-parfum-da-donna___220809.jpg"
+    },
+    {
+        "name_perfume": "Obsession for Men",
+        "brand": "Calvin Klein",
+        "price": "28.50",
+        "size": "125",
+        "description": "Eau de Toilette per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/calvin-klein/088300606511_01-o/calvin-klein-obsession-for-men-eau-de-toilette-per-uomo___130607.jpg"
+    },
+    {
+        "name_perfume": "Zino",
+        "brand": "Davidoff",
+        "price": "24.20",
+        "size": "125",
+        "description": "Eau de Toilette per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/davidoff/ddfzinm_aedt10_03-o/davidoff-zino-eau-de-toilette-per-uomo___130904.jpg"
+    },
+    {
+        "name_perfume": "Eros Flame",
+        "brand": "Versace",
+        "price": "93.50",
+        "size": "100",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/versace/8011003845354_01-o/versace-eros-flame-eau-de-parfum-per-uomo___190725.jpg"
+    },
+    {
+        "name_perfume": "Libre Intense",
+        "brand": "Yves Saint Laurent",
+        "price": "129.60",
+        "size": "90",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/yves-saint-laurent/3614273069557_01-o/yves-saint-laurent-libre-intense-eau-de-parfum-da-donna___200722.jpg"
+    },
+    {
+        "name_perfume": "Sì",
+        "brand": "Armani",
+        "price": "78.10",
+        "size": "50",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/armani/3605521816580_01-o/armani-si-eau-de-parfum-ricaricabile-da-donna___241007.jpg"
+    },
+    {
+        "name_perfume": "Déclaration",
+        "brand": "Cartier",
+        "price": "67.90",
+        "size": "50",
+        "description": "Eau de Toilette per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/cartier/cardcnm_aedt20_03/cartier-declaration-eau-de-toilette-per-uomo___130114.jpg"
+    },
+    {
+        "name_perfume": "Bvlgari Man In Black Parfum",
+        "brand": "BVLGARI",
+        "price": "117",
+        "size": "100",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/bulgari/783320421532_01/bvlgari-bvlgari-man-in-black-parfum-profumo-per-uomo___240208.jpg"
+    },
+    {
+        "name_perfume": "CK One Gold",
+        "brand": "Calvin Klein",
+        "price": "32.50",
+        "size": "100",
+        "description": "Eau de Toilette unisex",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/calvin-klein/3614222155409_01-o/calvin-klein-ck-one-gold-eau-de-toilette-unisex___161206.jpg"
+    },
+    {
+        "name_perfume": "Explorer",
+        "brand": "MontBlanc",
+        "price": "60",
+        "size": "60",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/montblanc/3386460101042_01-o/montblanc-explorer-eau-de-parfum-per-uomo___240726.jpg"
+    },
+    {
+        "name_perfume": "Euphoria",
+        "brand": "Calvin Klein",
+        "price": "31.80",
+        "size": "50",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/calvin-klein/cakephw_aedp20_03-o/calvin-klein-euphoria-eau-de-parfum-da-donna___130417.jpg"
+    },
+    {
+        "name_perfume": "Acqua di Gioia",
+        "brand": "Armani",
+        "price": "94.30",
+        "size": "100",
+        "description": "Eau de Parfum da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/armani/3605521172525_01new-o/armani-acqua-di-gioia-eau-de-parfum-da-donna___130516.jpg"
+    },
+    {
+        "name_perfume": "Guilty Absolute",
+        "brand": "Gucci",
+        "price": "69.90",
+        "size": "90",
+        "description": "Eau de Parfum per uomo",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/gucci/gucgabm_aedp10-o/gucci-guilty-absolute-eau-de-parfum-per-uomo___170818.jpg"
+    },
+    {
+        "name_perfume": "L'Imperatrice",
+        "brand": "Dolce&Gabbana",
+        "price": "63.20",
+        "size": "50",
+        "description": "Eau de Toilette da donna",
+        "img": "https://cdn.notinoimg.com/detail_main_mq/dolce-gabbana/3423222015589_01/dolce-gabbana-limperatrice-eau-de-toilette-da-donna___140710.jpg"
+    }
+]
