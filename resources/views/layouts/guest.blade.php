@@ -53,7 +53,7 @@
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
 
-                                <button type="submit" class="btn btn-outline-danger fw-bold fs-4">
+                                <button type="submit" class="btn bg-black text-white fw-bold fs-4">
                                     Log Out
                                 </button>
                             </form>
@@ -77,7 +77,7 @@
             </nav>
         </header>
 
-        <main class="py-4">
+        <main class="">
             <div class="container">
                 @yield('main-content')
             </div>

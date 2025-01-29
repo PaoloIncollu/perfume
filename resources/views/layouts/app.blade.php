@@ -50,7 +50,7 @@
                         
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <button type="submit" class="btn bg-black text-danger fw-bold">
+                            <button type="submit" class="btn bg-black text-white fw-bold">
                                 Log Out
                             </button>
                         </form>
@@ -59,7 +59,7 @@
             </nav>
         </header>
 
-        <main class="pt-4">
+        <main class="">
             <div class="container">
                 @yield('main-content')
             </div>

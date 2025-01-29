@@ -32,16 +32,18 @@
             
                             <div class="my-col-info col-sm-4 d-flex align-items-center">
                                 <div>
+                                    <h3 class="px-3">{{ $perfume->brand }}</h3>
                                     <h3 class="px-3">{{ $perfume->name_perfume }}</h3>
                                     <div class="px-3">
                                         <strong>Descrizione: {{ $perfume->description }}</strong><br>
+                                        <strong>Misura: {{ $perfume->size }} ml</strong><br>
                                         <strong>Prezzo: €{{ $perfume->price }}</strong>
                                     </div>
                                 </div>
                             </div>
             
                             <div class="col-sm-3 d-flex flex-column justify-content-center me-2">
-                                <button class="btn fw-bold bg-black text-warning w-100 mb-2" 
+                                <button class="btn fw-bold bg-black text-white w-100 mb-2" 
                                         type="button" 
                                         data-bs-toggle="offcanvas" 
                                         data-bs-target="#offcanvasWithEdit{{ $perfume->id }}" 
@@ -52,7 +54,7 @@
                                 {{-- Offcanvas per modifica profumo --}}
                                 @include('components.offcanvas-edit-perfumes', ['perfume' => $perfume])
             
-                                <button type="button" class="btn w-100 bg-black text-danger fw-bold" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $perfume->id }}">
+                                <button type="button" class="btn w-100 bg-black text-white fw-bold" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $perfume->id }}">
                                     Elimina
                                 </button>
             

@@ -2,11 +2,11 @@
 
 @section('main-content')
 
-    <div class="login-container rounded mt-5">
+    <div class="login-container">
 
-        <div class="d-flex justify-content-center">
+        <div class="login-form d-flex justify-content-center rounded my-auto">
 
-            <form method="POST" action="{{ route('login') }}" class="m-5 p-5">
+            <form method="POST" action="{{ route('login') }}" class="p-5">
                 @csrf
     
                 <!-- Email Address -->

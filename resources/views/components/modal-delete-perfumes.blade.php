@@ -14,11 +14,11 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn bg-dark text-primary fw-bold" data-bs-dismiss="modal">Indietro</button>
+                    <button type="button" class="btn bg-dark text-white fw-bold" data-bs-dismiss="modal">Indietro</button>
                     <form action="{{ route('admin.perfumes.destroy', [$perfume->id]) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn bg-dark text-danger fw-bold">
+                        <button type="submit" class="btn bg-dark text-white fw-bold">
                             Elimina
                         </button>
                     </form>

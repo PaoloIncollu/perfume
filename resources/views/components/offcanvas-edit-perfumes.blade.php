@@ -91,7 +91,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn bg-black fw-bold text-warning w-100">Modifica</button>
+                    <button type="submit" class="btn bg-black fw-bold text-white w-100">Modifica</button>
                 </form>
             </div>
         </div>
