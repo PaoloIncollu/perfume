@@ -28,6 +28,7 @@ Route::prefix('admin')
     Route::resource('/perfumes', PerfumeController::class)->only([
         'index',
         'show',
+        'store',
         'update',
         'destroy'
     ]);

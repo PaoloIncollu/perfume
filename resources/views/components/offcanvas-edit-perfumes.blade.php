@@ -42,8 +42,8 @@
 
                     <div class="mb-3">
                         <label for="size" class="form-label">Misura / ml <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control @error('size') is-invalid @enderror" 
-                               id="size" name="size" required minlength="2" maxlength="4" 
+                        <input type="number" class="form-control @error('size') is-invalid @enderror" 
+                               id="size" name="size" required min="10" step="5" max="200" 
                                value="{{ old('size', $perfume->size) }}" placeholder="Inserisci la descrizione del profumo...">
                         @error('size')
                             <span class="text-danger">Il campo misura è obbligatorio, inserire almeno 2 numeri</span>

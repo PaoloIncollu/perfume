@@ -25,6 +25,11 @@ class PerfumeSeeder extends Seeder
 
         $perfumeData = json_decode(File::get(database_path('seeders/perfumes.json')), true);
         
+        // Ordina i profumi in base al brand in ordine alfabetico
+        usort($perfumeData, function ($a, $b) {
+            return strcmp($a['brand'], $b['brand']);
+        });
+        
         foreach ($perfumeData as $perfume) {
             Perfume::create([
                 'name_perfume' => $perfume['name_perfume'],

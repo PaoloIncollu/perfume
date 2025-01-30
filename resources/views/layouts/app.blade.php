@@ -60,7 +60,7 @@
         </header>
 
         <main class="">
-            <div class="container">
+            <div class="container-fluid">
                 @yield('main-content')
             </div>
         </main>

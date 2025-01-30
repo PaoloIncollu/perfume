@@ -14,7 +14,7 @@ class PerfumeController extends Controller
      */
     public function index()
     {
-        $perfumes = Perfume::all();
+        $perfumes = Perfume::orderBy('brand', 'asc')->get();
         return view('admin.perfumes.index', compact('perfumes'));
     }
 
@@ -34,6 +34,7 @@ class PerfumeController extends Controller
         $validated = $request->validate([
             'name_perfume' => 'required|string|max:255',
             'brand' => 'required|string|max:255',
+            'size' => 'required|numeric|min:0',
             'price' => 'required|numeric|min:0',
             'description' => 'required|string|max:2048',
             'img' => 'nullable|image|max:2048',
@@ -74,6 +75,7 @@ class PerfumeController extends Controller
         $validated = $request->validate([
             'name_perfume' => 'required|string|max:255',
             'brand' => 'required|string|max:255',
+            'size' => 'required|numeric|min:0',
             'price' => 'required|numeric|min:0',
             'description' => 'required|string|max:2048',
             'img' => 'nullable|image|max:2048',
