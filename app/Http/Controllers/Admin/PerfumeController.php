@@ -55,6 +55,7 @@ class PerfumeController extends Controller
      */
     public function show(Perfume $perfume)
     {
+        
         return view('admin.perfumes.show', compact('perfume'));
     }
 

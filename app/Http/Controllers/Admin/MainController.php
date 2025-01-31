@@ -11,7 +11,7 @@ class MainController extends Controller
 
     public function dashboard()
     {
-        $perfumes = Perfume::get();
+        $perfumes = Perfume::orderBy('brand', 'asc')->get();
         return view('admin.perfumes.index', compact('perfumes'));
     }
 
