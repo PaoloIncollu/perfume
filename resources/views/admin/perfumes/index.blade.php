@@ -1,15 +1,35 @@
 @extends('layouts.app')
 
 @section('main-content')
+@vite('resources/js/perfumeSearch.js')
     <div>
-        <div class="my-5 px-5 d-flex justify-content-between align-items-center">
-            <div class="rounded rounded-4 bg-white">
-                <h1 class="fw-bold p-3">Catalogo Profumi</h1> 
+        <div class="my-5 px-5 ">
+
+            <div class="row gx-3 rounded justify-content-between align-items-center bg-white">
+                <div class="col-12 col-md-3 py-2">
+                    <h1 class="fw-bold">Catalogo Profumi</h1> 
+                </div>
+                <div class="col-8 col-md d-flex justify-content-center py-2">
+                    
+                    <input 
+                        type="text" 
+                        id="searchPerfume" 
+                        class="form-control w-75"
+                        data-bs-theme="dark" 
+                        placeholder="Filtra per brand...">
+                
+                </div>
+                <div class="col-4 col-md-2 d-flex justify-content-end py-2">
+                    <button class="fw-bold fs-2 btn btn-light d-flex align-items-center justify-content-center" 
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithAdd" 
+                        aria-controls="offcanvasWithAdd"
+                        style="width: 50px; height: 50px; border-radius: 10px;">
+                        +
+                    </button>
+                </div>
+                
             </div>
- 
-            <div>
-                <button class="fw-bold btn btn-light rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithAdd" aria-controls="offcanvasWithAdd">+</button>
-            </div>
+            
             
         </div>
         
@@ -18,11 +38,11 @@
 
             <div class="row vw-75 gx-3 gy-3">
                 @foreach ($perfumes as $perfume)
-                
+                    
                     {{-- Offcanvas per modifica profumo --}}
                     @include('components.offcanvas-add-perfumes', ['perfume' => $perfume])
-                    <div class=" col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-4">
-                        <div class="my-card d-flex justify-content-between rounded p-3">
+                    <div class=" col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-4 perfumes">
+                        <div class="my-card d-flex justify-content-between rounded p-3 ">
                             <div class="col-sm-3 d-flex align-items-center pe-2">
                                 <div class="img-container">
                                     @php
@@ -40,7 +60,7 @@
                                 </div>
                             </div>
             
-                            <div class="my-col-info col-sm-6 d-flex align-items-center">
+                            <div class="my-col-info col-sm-6 d-flex align-items-center perfumes">
                                 <div>
                                     <h3>{{ $perfume->brand }}</h3>
                                     <h5>{{ $perfume->name_perfume }}</h5>
@@ -78,4 +98,5 @@
             
         </div>
     </div>
+
 @endsection
