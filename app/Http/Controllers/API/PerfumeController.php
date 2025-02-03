@@ -10,34 +10,32 @@ use App\Models\Perfume;
 
 class PerfumeController extends Controller
 {
-    public function index(){
+    public function index(Request $request){
 
-        // paginazione per mostrarne 5 a pagina
-        $perfumes = Perfume::orderBy('brand', 'asc')->paginate(12);
-
+        // Ottieni il parametro 'brand' dalla query string
+        $brandNames = $request->query('brand');
+    
+        // Se il parametro 'brand' è presente, lo esplodi in un array (se ci sono più brand separati da virgola)
+        $brandNames = $brandNames ? explode(',', $brandNames) : [];
+    
+        // Inizializza la query per i profumi
+        $query = Perfume::query();
+    
+        // Se sono stati passati dei brand da filtrare
+        if (!empty($brandNames)) {
+            foreach ($brandNames as $brandName) {
+                $query->where('brand', $brandName);
+            }
+        }
+    
+        // Impaginazione dei profumi
+        $perfumes = $query->orderBy('brand', 'asc')->get();
+    
         return response()->json([
             'success' => true,
             'code' => 200,
             'perfumes' => $perfumes
         ]);
     }
-
-    public function show(string $id){
-        $perfumes = Perfume::where('id', $id)->first();
-
-        if($perfumes){
-            return response()->json([
-                'success' => true,
-                'code' => 200,
-                'perfumes' => $perfumes
-            ]);
-        }
-        else{
-            return response()->json([
-                'success' => false,
-                'code' => 404,
-                'message' => 'Profumo non trovato'
-            ]);
-        }
-    }
+    
 }
